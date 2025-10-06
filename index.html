@@ -1304,8 +1304,10 @@
     // TODO: Test cross origin online after launch and implement
     $(".card").click(function() {
         let caseID = $(this).attr("id");
-        $.get( "https://damon-lutton.github.io/portfolio/cases/" + caseID + ".html", function( data ) {
-            $( "#cases .modal-content" ).html( data );
+        let casePath = "damon-lutton.github.io/portfolio/cases/" + caseID + ".html";
+        alert(casePath);
+        $.get(casePath + caseID + ".html", function( data ) {
+            $("#cases .modal-content").html( data );
         });
     });
 
