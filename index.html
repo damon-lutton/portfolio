@@ -1305,11 +1305,13 @@
     $(".card").click(function() {
         let caseID = $(this).attr("id");
         let casePath = "https://damon-lutton.github.io/portfolio/cases/" + caseID + ".html";
-        alert(casePath);
         $.get(casePath, function( data ) {
             $("#cases .modal-content").html( data );
-            alert( "Load was performed." );
         });
+    });
+
+    $(".btn-close").click(function() {
+        $("#cases .modal-content").empty();
     });
 
 </script>
