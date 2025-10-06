@@ -1304,7 +1304,7 @@
     // TODO: Test cross origin online after launch and implement
     $(".card").click(function() {
         let caseID = $(this).attr("id");
-        $.get( "/cases/" + caseID + ".html", function( data ) {
+        $.get( "https://damon-lutton.github.io/portfolio/cases/" + caseID + ".html", function( data ) {
             $( "#cases .modal-content" ).html( data );
         });
     });
