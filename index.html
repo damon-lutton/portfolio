@@ -1306,7 +1306,7 @@
         let caseID = $(this).attr("id");
         let casePath = "damon-lutton.github.io/portfolio/cases/" + caseID + ".html";
         alert(casePath);
-        $.get(casePath + caseID + ".html", function( data ) {
+        $.get(casePath, function( data ) {
             $("#cases .modal-content").html( data );
         });
     });
