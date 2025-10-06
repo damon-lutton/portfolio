@@ -1,0 +1,169 @@
+
+$prefix: bs- !default;
+
+$accordion-bg:                    transparent !default;
+$accordion-border-width: 0;
+$accordion-date:                  #666666 !default;
+$accordion-active-date:           #959595 !default;
+$accordion-title:                 black !default;
+$accordion-active-title:          white !default;
+
+$accordion-button-bg:             white !default;
+$accordion-button-active-bg:      black !default;
+$accordion-icon-color:            black !default;
+$accordion-icon-active-color:     white !default;
+$accordion-button-icon:           url("data:image/svg+xml,<svg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15.0312 23.3936V15.3936H23.0312C23.5832 15.3936 24.0312 14.9456 24.0312 14.3936V10.3936C24.0312 9.84156 23.5832 9.39356 23.0312 9.39356H15.0312V1.39355C15.0312 0.841555 14.5832 0.393555 14.0312 0.393555H10.0312C9.47925 0.393555 9.03125 0.841555 9.03125 1.39355V9.39356H1.03125C0.479249 9.39356 0.0312486 9.84156 0.0312486 10.3936V14.3936C0.0312486 14.9456 0.479249 15.3936 1.03125 15.3936H9.03125V23.3936C9.03125 23.9456 9.47925 24.3936 10.0312 24.3936H14.0312C14.5832 24.3936 15.0312 23.9456 15.0312 23.3936Z' fill='#{$accordion-icon-color}'/></svg>") !default;
+$accordion-button-active-icon:    url("data:image/svg+xml,<svg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15.0312 23.3936V15.3936H23.0312C23.5832 15.3936 24.0312 14.9456 24.0312 14.3936V10.3936C24.0312 9.84156 23.5832 9.39356 23.0312 9.39356H15.0312V1.39355C15.0312 0.841555 14.5832 0.393555 14.0312 0.393555H10.0312C9.47925 0.393555 9.03125 0.841555 9.03125 1.39355V9.39356H1.03125C0.479249 9.39356 0.0312486 9.84156 0.0312486 10.3936V14.3936C0.0312486 14.9456 0.479249 15.3936 1.03125 15.3936H9.03125V23.3936C9.03125 23.9456 9.47925 24.3936 10.0312 24.3936H14.0312C14.5832 24.3936 15.0312 23.9456 15.0312 23.3936Z' fill='#{$accordion-icon-active-color}'/></svg>") !default;
+
+.accordion-item {
+
+  background: transparent;
+
+  &:not(:last-of-type) {
+    margin-bottom: 12px;
+  }
+
+  .accordion-button {
+    box-shadow: none;
+
+    @media (max-width: 991px) {
+      // Change Content Direction and Icon Position (Mobile)
+      padding-right: 3rem;
+      flex-direction: column;
+      align-items: flex-start;
+      &:after {
+        position: absolute;
+        top: 50%;
+        right: var(--bs-accordion-btn-padding-y);
+      }
+    }
+
+    .experience-title {
+      font-weight: 500;
+      color: $accordion-title;
+      @media (min-width: 1200px) {
+        font-size: $font-size-base * 2;
+        letter-spacing: -1px;
+      }
+      @media (max-width: 1199px) {
+        font-size: $font-size-base * 1.75;
+        letter-spacing: -.5px;
+      }
+    }
+    time {
+      font-size: $font-size-base * 1.125;
+      font-weight: 500;
+      color: $accordion-date;
+      @media (min-width: 768px) {
+
+      }
+      @media (max-width: 767px) {
+        margin-bottom: .25rem;
+      }
+    }
+    &:not(.collapsed) {
+      .experience-title {
+        color: $accordion-active-title;
+      }
+      .experience-date {
+        color: $accordion-active-date;
+      }
+    }
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+
+  .accordion-body {
+    margin-top: 12px;
+    dl {
+      margin-bottom: 0;
+      dt {
+        display: flex;
+        align-items: center;
+        @media (min-width: 992px) {
+          font-weight: 500;
+        }
+        @media (max-width: 991px) {
+          font-size: $font-size-base * .875;
+          font-weight: 400;
+        }
+      }
+      &:not(.experience-company) {
+        dt {
+          @media (max-width: 991px) {
+            margin-bottom: .375rem;
+          }
+        }
+      }
+
+      dd {
+        margin-bottom: 0;
+        p {
+          font-size: $font-size-base * 1.125;
+          line-height: 1.75rem;
+          letter-spacing: -.5px;
+          margin-bottom: 0;
+          &:not(:last-of-type) {
+            margin-bottom: $spacer * .75;
+          }
+        }
+        ul.list-responsibilities {
+          list-style: none;
+          > li {
+            &:before {
+              content: "";
+              display: flex;
+              width: 16px;
+              height: 16px;
+              background-color: black;
+              position: absolute;
+              left: 0;
+              top: 6px;
+              background: url("../../images/accordion-li.svg") no-repeat;
+            }
+            position: relative;
+
+            padding-left: $spacer * 1.5;
+            line-height: 1.75rem;
+            letter-spacing: -.5px;
+
+            @media (min-width: 992px) {
+              font-size: $font-size-base * 1.125;
+            }
+            @media (max-width: 991px) {
+              font-size: $font-size-base;
+            }
+
+            &:not(:last-of-type) {
+              margin-bottom: $spacer * .75;
+            }
+          }
+        }
+      }
+
+      &.experience-company {
+        dd {
+          span {
+            &.p-name {
+              color: black;
+              font-weight: 600;
+              font-size: $font-size-base * 1.5;
+              @media (max-width: 767px) {
+
+              }
+            }
+            &.date-range {
+              color: #686868;
+              time {
+                font-size: $font-size-base;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+}

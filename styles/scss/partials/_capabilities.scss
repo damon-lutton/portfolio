@@ -1,0 +1,83 @@
+
+.grid-capabilities {
+  gap: 12px 0;
+}
+
+.capability-sm {
+  background-color: white;
+  border-radius: var(--bs-border-radius);
+  dl {
+    dt {
+      color: black;
+    }
+    dd {
+      color: black;
+      font-size: $font-size-base * 1.125;
+      line-height: $font-size-base * 1.75;
+      letter-spacing: -.5px;
+    }
+  }
+}
+
+.capability-lg {
+  background-color: black;
+  border-radius: var(--bs-border-radius);
+  dl {
+    dt {
+      color: white;
+    }
+    dd {
+      color: #6C6C6C;
+      font-size: $font-size-base * 2;
+      line-height: $font-size-base * 3;
+      letter-spacing: -1px;
+    }
+  }
+}
+
+.capability-sm, .capability-lg {
+
+  @media (min-width: 1200px) {
+    padding: 2.25rem;
+  }
+  @media (max-width: 1199px) {
+    padding: 1.5rem;
+  }
+
+  dl {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    dt {
+      display: flex;
+      align-items: center;
+      font-size: $font-size-base * 1.25;
+      font-weight: 500;
+      &:after {
+        display: inline-flex;
+        font-size: $font-size-base * .75;
+        color: #808080;
+        margin-left: auto;
+        font-weight: normal;
+      }
+      &[data-order="1"]:after {
+        content: "01";
+      }
+      &[data-order="2"]:after {
+        content: "02";
+      }
+      &[data-order="3"]:after {
+        content: "03";
+      }
+      &[data-order="4"]:after {
+        content: "04";
+      }
+      &[data-order="5"]:after {
+        content: "05";
+      }
+    }
+    dd {
+      margin: auto 0 0 0;
+    }
+  }
+}

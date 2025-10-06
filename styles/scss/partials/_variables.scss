@@ -1,0 +1,36 @@
+
+// Grid
+$grid-gutter-width: .75rem !default;
+
+// Colors
+$heading-number:      #BFBFBF !default;
+$heading-title:       #6D6D6D !default;
+$heading-description: #6C6C6C !default;
+$subtitle-highlight:  #6C6C6C !default;
+
+// Fonts
+$font-family-sans-serif: "Inter" !default;
+
+// Font Sizes
+$font-size-base:              1rem !default;
+$h1-font-size:                $font-size-base * 9 !default;
+$h2-font-size:                $font-size-base * 5.25 !default;
+$h3-font-size:                $font-size-base * 3.375 !default;
+$h4-font-size:                $font-size-base * 3 !default;
+$h5-font-size:                $font-size-base * 2.625 !default;
+$h6-font-size:                $font-size-base * 2.25 !default;
+
+// Spacers
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .5,
+  2: $spacer * .75,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+// Accordions
+$accordion-padding-y:                     1.5rem !default;
+$accordion-padding-x:                     1.5rem !default;

@@ -1,0 +1,123 @@
+
+$prefix: bs- !default;
+
+.modal {
+  .modal-dialog {
+    .modal-content {
+
+      padding: $spacer * .75;
+      background-color: #F5F5F5;
+
+      .modal-header, .modal-body {
+        background-color: white;
+      }
+
+      .modal-header {
+
+        border: none;
+        z-index: 2;
+        padding: 1.5rem;
+        margin-bottom: $spacer * .75;
+        border-radius: var(--bs-border-radius);
+
+        h2 {
+          @media (min-width: 576px) {
+            font-size: $font-size-base * 1.625;
+          }
+          @media (max-width: 575px) {
+            font-size: $font-size-base * 1.25;
+          }
+        }
+
+      }
+
+      .modal-body {
+
+        background-color: transparent;
+        padding: 0;
+
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+        }
+
+        .case-header {
+          position: relative;
+          z-index: 3;
+          border-radius: var(--bs-border-radius);
+        }
+
+        #case-hero {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        #case-roles {
+          dl {
+            dt {
+              display: flex;
+              padding: 2.25rem;
+              background-color: white;
+              border-radius: var(--bs-border-radius);
+              margin-bottom: .75rem;
+              &:after {
+                display: inline-flex;
+                font-size: $font-size-base * .75;
+                color: #808080;
+                margin-left: auto;
+                font-weight: normal;
+                align-items: center;
+              }
+              &[data-order="1"]:after {
+                content: "01";
+              }
+              &[data-order="2"]:after {
+                content: "02";
+              }
+              &[data-order="3"]:after {
+                content: "03";
+              }
+              &[data-order="4"]:after {
+                content: "04";
+              }
+            }
+            dd {
+              ul {
+                list-style: none;
+                padding-left: 0;
+                li {
+                  color: white;
+                  background-color: black;
+                  border-radius: var(--bs-border-radius);
+                  padding: 1.5rem 2.25rem;
+                  margin-bottom: .375rem;
+                }
+              }
+            }
+          }
+        }
+
+        h3 {
+          color: black;
+        }
+
+        p:not(.subtitle-sm) {
+          font-size: $font-size-base * 1.125;
+          line-height: 1.75rem;
+          letter-spacing: -.5px;
+          margin-bottom: 0;
+          &:not(:last-of-type) {
+            margin-bottom: $spacer * .75;
+          }
+        }
+
+      }
+
+    }
+  }
+}

@@ -1,0 +1,36 @@
+
+footer {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  dt {
+    color: #959595;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: $font-size-base * 1.125;
+    letter-spacing: 2px;
+  }
+  dd {
+    color: white !important;
+    a {
+      color: white;
+    }
+    &.footer-desc-lg {
+      font-size: $font-size-base * 2.625;
+      line-height: 3.75rem;
+      font-weight: 500;
+      letter-spacing: -1px;
+    }
+    &.footer-desc-sm {
+      font-size: $font-size-base * 1.5;
+      line-height: 2.375rem;
+      letter-spacing: -.5px;
+    }
+  }
+  p.copyright {
+    padding-top: 6.25rem;
+    color: #959595;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: $font-size-base;
+  }
+}
