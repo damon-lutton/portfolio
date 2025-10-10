@@ -1,0 +1,11 @@
+<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 9C13.2091 9 15 7.20914 15 5C15 2.79086 13.2091 1 11 1C8.79086 1 7 2.79086 7 5C7 7.20914 8.79086 9 11 9Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M11 23C13.2091 23 15 21.2091 15 19C15 16.7909 13.2091 15 11 15C8.79086 15 7 16.7909 7 19C7 21.2091 8.79086 23 11 23Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M25 9C27.2091 9 29 7.20914 29 5C29 2.79086 27.2091 1 25 1C22.7909 1 21 2.79086 21 5C21 7.20914 22.7909 9 25 9Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M25 23C27.2091 23 29 21.2091 29 19C29 16.7909 27.2091 15 25 15C22.7909 15 21 16.7909 21 19C21 21.2091 22.7909 23 25 23Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M20 10H16V14H20V10Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M11 5L16 10" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M16 14L11 19" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M20 14L25 19" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M20 10L25 5" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</svg>
