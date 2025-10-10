@@ -3,17 +3,14 @@ footer {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
   dt {
-    color: #959595;
+    color: $text-gray;
     font-weight: normal;
     text-transform: uppercase;
     font-size: $font-size-base * 1.125;
     letter-spacing: 2px;
   }
   dd {
-    color: white !important;
-    a {
-      color: white;
-    }
+    color: $white;
     &.footer-desc-lg {
       font-size: $font-size-base * 2.625;
       line-height: 3.75rem;
@@ -26,9 +23,32 @@ footer {
       letter-spacing: -.5px;
     }
   }
+  a {
+    color: $white;
+    &#linkedin {
+      margin-top: 3rem;
+      font-size: 1.5rem;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+      &:before {
+        content: "";
+        width: 48px;
+        height: 48px;
+        background: url("../../images/icon-linkedin.svg") no-repeat;
+        margin-right: 1.5rem;
+      }
+    }
+    &:focus, &:focus-visible {
+      outline: 4px solid $white;
+      outline-offset: 8px;
+      border-radius: .075rem;
+    }
+  }
   p.copyright {
     padding-top: 6.25rem;
-    color: #959595;
+    color: $text-gray;
     font-weight: normal;
     text-transform: uppercase;
     font-size: $font-size-base;

@@ -6,7 +6,7 @@
 
   .grid-client {
 
-    background-color: white;
+    background-color: $white;
     border-radius: var(--bs-border-radius);
     display: grid;
     align-content: center;
@@ -33,7 +33,7 @@
 
 .vertical-diversity {
 
-  background-color: black;
+  background-color: $black;
   border-radius: var(--bs-border-radius);
 
   @media (min-width: 992px) {
@@ -56,13 +56,13 @@
     h3 {
       font-size: $font-size-base * 2.625;
       margin: auto 0 0 0;
-      color: white;
+      color: $white;
     }
     p {
       font-size: $font-size-base * 1.5;
       line-height: $font-size-base * 2.125;
       margin: 1.5rem 0 0 0;
-      color: #6C6C6C;
+      color: $medium-gray;
       letter-spacing: -.5px;
     }
 
@@ -83,7 +83,7 @@
 
       display: flex;
       align-items: center;
-      color: white;
+      color: $white;
       font-size: $font-size-base * 1.25;
       font-weight: 500;
 
