@@ -313,6 +313,16 @@
     max-height: 100%;
   }
 }
+@media (min-width: 768px) {
+  #section-hero .wrapper-hero #background img.hero-bg-mobile {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  #section-hero .wrapper-hero #background img.hero-bg-desktop {
+    display: none !important;
+  }
+}
 #section-hero .wrapper-hero #background:before {
   bottom: 36px;
   color: #FFFFFF;
