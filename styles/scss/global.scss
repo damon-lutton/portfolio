@@ -47,7 +47,7 @@ body {
       margin-bottom: 0;
 
       span {
-        &:not([aria-hidden="true"]) {
+        &:not([role="presentation"]) {
           color: $medium-gray;
           display: flex;
           font-size: $font-size-base;
@@ -58,7 +58,7 @@ body {
           padding: 0 $spacer * 1.5;
           margin-left: 10px;
         }
-        &[aria-hidden="true"] {
+        &[role="presentation"] {
           color: $light-gray;
           font-size: $font-size-base;
           font-weight: bold;
