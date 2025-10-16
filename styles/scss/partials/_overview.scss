@@ -9,10 +9,10 @@
 
 .statistic {
 
+  border-radius: var(--bs-border-radius);
   display: flex;
   flex-direction: column;
   height: 100%;
-  border-radius: var(--bs-border-radius);
 
   @media (min-width: 992px) {
     padding: 2.25rem;
@@ -24,8 +24,8 @@
 
   i {
     display: flex;
-    width: 36px;
     height: 36px;
+    width: 36px;
 
     @media (min-width: 768px) {
       margin-bottom: 3rem;
@@ -39,26 +39,26 @@
   h3 {
     line-height: inherit;
     .value {
-      display: flex;
       align-items: center;
+      display: flex;
       @media (min-width: 1200px) {
         font-size: 6rem;
-        line-height: 6rem;
         letter-spacing: -3px;
+        line-height: 6rem;
       }
       @media (max-width: 1199px) {
         font-size: 4rem;
-        line-height: 4rem;
         letter-spacing: -2px;
+        line-height: 4rem;
       }
     }
     sup {
-      font-size: 3rem;
-      top: -4px;
       bottom: 0;
-      line-height: unset;
       color: #666666;
+      font-size: 3rem;
+      line-height: unset;
       margin-left: 5px;
+      top: -4px;
     }
     .value-description {
       display: flex;

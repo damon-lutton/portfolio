@@ -6,10 +6,10 @@
 
   .grid-client {
 
+    align-content: center;
     background-color: $white;
     border-radius: var(--bs-border-radius);
     display: grid;
-    align-content: center;
     justify-content: center;
 
     @media (min-width: 1200px) {
@@ -23,8 +23,8 @@
 
     img {
       display: block;
-      max-width: 100%;
       height: auto;
+      max-width: 100%;
     }
 
   }
@@ -54,24 +54,24 @@
     }
 
     h3 {
+      color: $white;
       font-size: $font-size-base * 2.625;
       margin: auto 0 0 0;
-      color: $white;
     }
     p {
+      color: $medium-gray;
       font-size: $font-size-base * 1.5;
+      letter-spacing: -.5px;
       line-height: $font-size-base * 2.125;
       margin: 1.5rem 0 0 0;
-      color: $medium-gray;
-      letter-spacing: -.5px;
     }
 
   }
 
   #list-verticals {
 
-    padding: 0;
     list-style: none;
+    padding: 0;
     @media (min-width: 992px) {
       margin: 0 0 -1.5rem 0;
     }
@@ -81,9 +81,9 @@
 
     > li {
 
-      display: flex;
       align-items: center;
       color: $white;
+      display: flex;
       font-size: $font-size-base * 1.25;
       font-weight: 500;
 
@@ -96,17 +96,17 @@
 
       > img {
         display: inline-flex;
-        width: 36px;
         height: 24px;
         margin-right: 12px;
+        width: 36px;
       }
 
       > .count {
+        color: #999999;
         display: inline-flex;
         font-size: $font-size-base;
         font-weight: normal;
         margin-left: auto;
-        color: #999999;
       }
 
     }

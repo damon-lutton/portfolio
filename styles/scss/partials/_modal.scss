@@ -5,8 +5,8 @@ $prefix: bs- !default;
   .modal-dialog {
     .modal-content {
 
-      padding: $spacer * .75;
       background-color: #F5F5F5;
+      padding: $spacer * .75;
 
       .modal-header, .modal-body {
         background-color: $white;
@@ -15,9 +15,9 @@ $prefix: bs- !default;
       .modal-header {
 
         border: none;
-        z-index: 2;
-        margin-bottom: $spacer * .75;
         border-radius: var(--bs-border-radius);
+        margin-bottom: $spacer * .75;
+        z-index: 2;
 
         @media (min-width: 576px) {
           padding: 1.5rem;
@@ -37,39 +37,39 @@ $prefix: bs- !default;
         }
 
         .btn-close {
-          position: relative;
+          background-color: $black;
+          background-image: none;
+          border-radius: var(--bs-border-radius);
           color: $white;
           opacity: 1;
-          background-image: none;
-          background-color: $black;
-          border-radius: var(--bs-border-radius);
+          position: relative;
           @media (min-width: 576px) {
-            width: 3rem;
             height: 3rem;
             min-width: 3rem;
+            width: 3rem;
           }
           @media (max-width: 575px) {
-            width: 2.25rem;
             height: 2.25rem;
             min-width: 2.25rem;
+            width: 2.25rem;
           }
 
           &:after {
-            display: flex;
-            width: 20px;
-            height: 20px;
-            content: "";
             background: transparent url("../../images/btn-close.svg") no-repeat center;
+            content: "";
+            display: flex;
+            height: 20px;
+            left: 50%;
             position: absolute;
             top: 50%;
-            left: 50%;
             transform: translate(-50%, -50%);
+            width: 20px;
           }
 
           &:focus, &:focus-visible {
+            box-shadow: none;
             outline: 4px solid $light-gray;
             outline-offset: 4px;
-            box-shadow: none;
           }
 
         }
@@ -79,25 +79,25 @@ $prefix: bs- !default;
       .modal-body {
 
         background-color: transparent;
-        padding: 0;
-        overflow-y: scroll;
-        scrollbar-width: none;
         -ms-overflow-style: none;
+        overflow-y: scroll;
+        padding: 0;
+        scrollbar-width: none;
         &::-webkit-scrollbar {
-          width: 0;
           height: 0;
+          width: 0;
         }
 
         &:focus-visible {
+          box-shadow: none;
           outline: 4px solid $light-gray;
           outline-offset: -5px;
-          box-shadow: none;
         }
 
         .case-header {
+          border-radius: var(--bs-border-radius);
           position: relative;
           z-index: 3;
-          border-radius: var(--bs-border-radius);
         }
 
         #case-hero {
@@ -108,21 +108,21 @@ $prefix: bs- !default;
             padding-top: .75rem;
           }
           img {
-            width: 100%;
             height: auto;
+            width: 100%;
           }
         }
 
-        #case-roles {
+        .case-role {
           dl {
             dt {
-              display: flex;
-              color: $black;
               background-color: $white;
               border-radius: var(--bs-border-radius);
-              margin-bottom: .75rem;
+              color: $black;
+              display: flex;
               font-size: $font-size-base * 1.25;
               font-weight: 500;
+              margin-bottom: .75rem;
               @media (min-width: 992px) {
                 padding: 1.75rem;
               }
@@ -130,12 +130,12 @@ $prefix: bs- !default;
                 padding: 1.5rem;
               }
               &:after {
+                align-items: center;
+                color: $text-gray;
                 display: inline-flex;
                 font-size: $font-size-base * .75;
-                color: $text-gray;
-                margin-left: auto;
                 font-weight: normal;
-                align-items: center;
+                margin-left: auto;
               }
               &[data-order="1"]:after {
                 content: "01";
@@ -155,9 +155,9 @@ $prefix: bs- !default;
                 list-style: none;
                 padding-left: 0;
                 li {
-                  color: $white;
                   background-color: $black;
                   border-radius: var(--bs-border-radius);
+                  color: $white;
                   margin-bottom: .375rem;
                   @media (min-width: 992px) {
                     padding: .75rem 1.5rem;
@@ -177,8 +177,8 @@ $prefix: bs- !default;
 
         p:not(.subtitle-sm) {
           font-size: $font-size-base * 1.125;
-          line-height: 1.75rem;
           letter-spacing: -.5px;
+          line-height: 1.75rem;
           margin-bottom: 0;
           &:not(:last-of-type) {
             margin-bottom: $spacer * .75;
@@ -189,25 +189,16 @@ $prefix: bs- !default;
           padding: 0;
           li {
             font-size: $font-size-base * 1.125;
-            line-height: 1.75rem;
             letter-spacing: -.5px;
+            line-height: 1.75rem;
           }
         }
 
-        #case-solution {
+        .case-solution {
           img {
+            height: auto;
             max-width: 100%;
             width: auto;
-            height: auto;
-            &.screen-border {
-              border-radius: 10px;
-              @media (min-width: 768px) {
-                border: 10px solid #E3E3E3;
-              }
-              @media (max-width: 767px) {
-                border: 5px solid #E3E3E3;
-              }
-            }
           }
         }
 

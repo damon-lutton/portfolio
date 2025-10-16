@@ -27,27 +27,27 @@ $accordion-button-active-icon:    url("data:image/svg+xml,<svg width='25' height
     box-shadow: none;
 
     &:focus, &:focus-visible {
+      box-shadow: none;
       outline: 4px solid $light-gray;
       outline-offset: 4px;
-      box-shadow: none;
     }
 
     @media (max-width: 991px) {
 
       // Change Content Direction and Icon Position (Mobile)
-      padding-right: 3rem;
-      flex-direction: column;
       align-items: flex-start;
+      flex-direction: column;
+      padding-right: 3rem;
       &:after {
         position: absolute;
-        top: 50%;
         right: var(--bs-accordion-btn-padding-y);
+        top: 50%;
       }
     }
 
     .experience-title {
-      font-weight: 500;
       color: $accordion-title;
+      font-weight: 500;
       transition: color 0.3s ease;
       @media (min-width: 1200px) {
         font-size: $font-size-base * 2;
@@ -59,9 +59,9 @@ $accordion-button-active-icon:    url("data:image/svg+xml,<svg width='25' height
       }
     }
     time {
+      color: $accordion-date;
       font-size: $font-size-base * 1.125;
       font-weight: 500;
-      color: $accordion-date;
       @media (min-width: 768px) {
 
       }
@@ -97,8 +97,8 @@ $accordion-button-active-icon:    url("data:image/svg+xml,<svg width='25' height
         color: $accordion-active-title;
       }
       &:after {
-        color: $accordion-active-title;
         background-image: var(--bs-accordion-btn-active-icon);;
+        color: $accordion-active-title;
       }
     }
 
@@ -109,8 +109,8 @@ $accordion-button-active-icon:    url("data:image/svg+xml,<svg width='25' height
     dl {
       margin-bottom: 0;
       dt {
-        display: flex;
         align-items: center;
+        display: flex;
         @media (min-width: 992px) {
           font-weight: 500;
         }
@@ -131,8 +131,8 @@ $accordion-button-active-icon:    url("data:image/svg+xml,<svg width='25' height
         margin-bottom: 0;
         p {
           font-size: $font-size-base * 1.125;
-          line-height: 1.75rem;
           letter-spacing: -.5px;
+          line-height: 1.75rem;
           margin-bottom: 0;
           &:not(:last-of-type) {
             margin-bottom: $spacer * .75;
@@ -141,23 +141,20 @@ $accordion-button-active-icon:    url("data:image/svg+xml,<svg width='25' height
         ul.list-responsibilities {
           list-style: none;
           > li {
+            letter-spacing: -.5px;
+            line-height: 1.75rem;
+            padding-left: $spacer * 1.5;
+            position: relative;
             &:before {
+              background: url("../../images/accordion-li.svg") no-repeat;
               content: "";
               display: flex;
-              width: 16px;
               height: 16px;
-              background-color: $black;
-              position: absolute;
               left: 0;
+              position: absolute;
               top: 6px;
-              background: url("../../images/accordion-li.svg") no-repeat;
+              width: 16px;
             }
-            position: relative;
-
-            padding-left: $spacer * 1.5;
-            line-height: 1.75rem;
-            letter-spacing: -.5px;
-
             @media (min-width: 992px) {
               font-size: $font-size-base * 1.125;
             }
@@ -177,8 +174,8 @@ $accordion-button-active-icon:    url("data:image/svg+xml,<svg width='25' height
           span {
             &.p-name {
               color: $black;
-              font-weight: 600;
               font-size: $font-size-base * 1.5;
+              font-weight: 600;
               @media (max-width: 767px) {
 
               }

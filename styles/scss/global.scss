@@ -7,7 +7,6 @@
 @import "partials/clients";
 @import "partials/capabilities";
 @import "partials/projects";
-@import "partials/experience";
 @import "partials/modal";
 @import "partials/footer";
 
@@ -15,42 +14,6 @@
 
 body {
   background-color: #F5F5F5;
-}
-
-#section-overview, #case-overview {
-  .section-title {
-    &:before {
-      content: "01";
-    }
-  }
-}
-#section-clients, #case-process {
-  .section-title {
-    &:before {
-      content: "02";
-    }
-  }
-}
-#section-capabilities, #case-solution {
-  .section-title {
-    &:before {
-      content: "03";
-    }
-  }
-}
-#section-projects {
-  .section-title {
-    &:before {
-      content: "04";
-    }
-  }
-}
-#section-experience {
-  .section-title {
-    &:before {
-      content: "05";
-    }
-  }
 }
 
 .content-section {
@@ -82,39 +45,42 @@ body {
       height: 48px;
       position: relative;
       margin-bottom: 0;
+
       span {
-        color: $medium-gray;
-        display: flex;
-        font-size: $font-size-base;
-        font-weight: bold;
-        background-color: $white;
-        border-radius: var(--bs-border-radius) 0 var(--bs-border-radius) var(--bs-border-radius);
-        align-items: center;
-        padding: 0 $spacer * 1.5;
-        margin-left: 10px;
-      }
-      &:before {
-        color: $light-gray;
-        font-size: $font-size-base;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $white;
-        width: 48px;
-        height: 100%;
-        border-radius: var(--bs-border-radius) var(--bs-border-radius) var(--bs-border-radius) 0;
-      }
-      &:after {
-        display: flex;
-        content: "";
-        width: 10px;
-        height: 28px;
-        background: url("../../images/title-divider.svg") no-repeat;
-        position: absolute;
-        left: 48px;
-        top: 50%;
-        transform: translateY(-50%);
+        &:not([aria-hidden="true"]) {
+          color: $medium-gray;
+          display: flex;
+          font-size: $font-size-base;
+          font-weight: bold;
+          background-color: $white;
+          border-radius: var(--bs-border-radius) 0 var(--bs-border-radius) var(--bs-border-radius);
+          align-items: center;
+          padding: 0 $spacer * 1.5;
+          margin-left: 10px;
+        }
+        &[aria-hidden="true"] {
+          color: $light-gray;
+          font-size: $font-size-base;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $white;
+          width: 48px;
+          height: 100%;
+          border-radius: var(--bs-border-radius) var(--bs-border-radius) var(--bs-border-radius) 0;
+          &:after {
+            display: flex;
+            content: "";
+            width: 10px;
+            height: 28px;
+            background: url("../../images/title-divider.svg") no-repeat;
+            position: absolute;
+            left: 48px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
       }
     }
 

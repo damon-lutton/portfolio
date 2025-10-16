@@ -1,56 +1,56 @@
 
 footer {
-  padding-top: 7.5rem;
   padding-bottom: 7.5rem;
+  padding-top: 7.5rem;
   dt {
     color: $text-gray;
-    font-weight: normal;
-    text-transform: uppercase;
     font-size: $font-size-base * 1.125;
+    font-weight: normal;
     letter-spacing: 2px;
+    text-transform: uppercase;
   }
   dd {
     color: $white;
     &.footer-desc-lg {
       font-size: $font-size-base * 2.625;
-      line-height: 3.75rem;
       font-weight: 500;
       letter-spacing: -1px;
+      line-height: 3.75rem;
     }
     &.footer-desc-sm {
       font-size: $font-size-base * 1.5;
-      line-height: 2.375rem;
       letter-spacing: -.5px;
+      line-height: 2.375rem;
     }
   }
   a {
     color: $white;
     &#linkedin {
-      margin-top: 3rem;
-      font-size: 1.5rem;
+      align-items: center;
       display: inline-flex;
       flex-direction: row;
-      align-items: center;
+      font-size: 1.5rem;
+      margin-top: 3rem;
       text-decoration: none;
       &:before {
-        content: "";
-        width: 48px;
-        height: 48px;
         background: url("../../images/icon-linkedin.svg") no-repeat;
+        content: "";
+        height: 48px;
         margin-right: 1.5rem;
+        width: 48px;
       }
     }
     &:focus, &:focus-visible {
+      border-radius: .075rem;
       outline: 4px solid $white;
       outline-offset: 8px;
-      border-radius: .075rem;
     }
   }
   p.copyright {
-    padding-top: 6.25rem;
     color: $text-gray;
-    font-weight: normal;
-    text-transform: uppercase;
     font-size: $font-size-base;
+    font-weight: normal;
+    padding-top: 6.25rem;
+    text-transform: uppercase;
   }
 }

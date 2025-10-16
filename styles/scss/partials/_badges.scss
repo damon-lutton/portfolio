@@ -8,18 +8,18 @@ $prefix:  bs- !default;
   gap: 6px;
 
   li[class*="badge-"] {
-    display: inline-flex;
     border-radius: var(--bs-border-radius);
+    display: inline-flex;
     font-size: .875rem;
-    line-height: .875rem;
     font-weight: 600;
     letter-spacing: 0;
+    line-height: .875rem;
     text-align: center;
-    white-space: nowrap;
     vertical-align: baseline;
+    white-space: nowrap;
     &.text-bg-outline {
-      color: $black;
       border: 2px solid #D9D9D9;
+      color: $black;
     }
     &:empty {
       display: none;
