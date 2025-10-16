@@ -1,5 +1,4 @@
-
-$prefix:  bs- !default;
+$prefix: bs- !default;
 
 .list-badges {
 
@@ -17,10 +16,12 @@ $prefix:  bs- !default;
     text-align: center;
     vertical-align: baseline;
     white-space: nowrap;
+
     &.text-bg-outline {
       border: 2px solid #D9D9D9;
       color: $black;
     }
+
     &:empty {
       display: none;
     }
@@ -30,6 +31,7 @@ $prefix:  bs- !default;
 
 .badge-lg {
   padding: .75rem 1rem;
+
   &.text-bg-outline {
     padding: .625rem .875rem;
   }
@@ -37,6 +39,7 @@ $prefix:  bs- !default;
 
 .badge-sm {
   padding: .5rem;
+
   &.text-bg-outline {
     padding: .425rem;
   }

@@ -1,4 +1,3 @@
-
 $prefix: bs- !default;
 
 .modal {
@@ -83,6 +82,7 @@ $prefix: bs- !default;
         overflow-y: scroll;
         padding: 0;
         scrollbar-width: none;
+
         &::-webkit-scrollbar {
           height: 0;
           width: 0;
@@ -107,6 +107,7 @@ $prefix: bs- !default;
           @media (max-width: 1199px) {
             padding-top: .75rem;
           }
+
           img {
             height: auto;
             width: 100%;
@@ -129,6 +130,7 @@ $prefix: bs- !default;
               @media (max-width: 991px) {
                 padding: 1.5rem;
               }
+
               &:after {
                 align-items: center;
                 color: $text-gray;
@@ -137,23 +139,29 @@ $prefix: bs- !default;
                 font-weight: normal;
                 margin-left: auto;
               }
+
               &[data-order="1"]:after {
                 content: "01";
               }
+
               &[data-order="2"]:after {
                 content: "02";
               }
+
               &[data-order="3"]:after {
                 content: "03";
               }
+
               &[data-order="4"]:after {
                 content: "04";
               }
             }
+
             dd {
               ul {
                 list-style: none;
                 padding-left: 0;
+
                 li {
                   background-color: $black;
                   border-radius: var(--bs-border-radius);
@@ -180,6 +188,7 @@ $prefix: bs- !default;
           letter-spacing: -.5px;
           line-height: 1.75rem;
           margin-bottom: 0;
+
           &:not(:last-of-type) {
             margin-bottom: $spacer * .75;
           }
@@ -187,6 +196,7 @@ $prefix: bs- !default;
 
         ul {
           padding: 0;
+
           li {
             font-size: $font-size-base * 1.125;
             letter-spacing: -.5px;

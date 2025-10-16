@@ -6,10 +6,12 @@
 .capability-sm {
   background-color: white;
   border-radius: var(--bs-border-radius);
+
   dl {
     dt {
       color: $black;
     }
+
     dd {
       color: $black;
       font-size: $font-size-base * 1.125;
@@ -22,10 +24,12 @@
 .capability-lg {
   background-color: $black;
   border-radius: var(--bs-border-radius);
+
   dl {
     dt {
       color: $white;
     }
+
     dd {
       color: $medium-gray;
       font-size: $font-size-base * 2;
@@ -48,11 +52,13 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+
     dt {
       align-items: center;
       display: flex;
       font-size: $font-size-base * 1.25;
       font-weight: 500;
+
       &:after {
         color: $text-gray;
         display: inline-flex;
@@ -60,22 +66,28 @@
         font-weight: normal;
         margin-left: auto;
       }
+
       &[data-order="1"]:after {
         content: "01";
       }
+
       &[data-order="2"]:after {
         content: "02";
       }
+
       &[data-order="3"]:after {
         content: "03";
       }
+
       &[data-order="4"]:after {
         content: "04";
       }
+
       &[data-order="5"]:after {
         content: "05";
       }
     }
+
     dd {
       margin: auto 0 0 0;
     }
